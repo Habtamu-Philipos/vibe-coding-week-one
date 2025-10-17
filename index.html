@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login" style="display: none;">
+            <h1>Login</h1>
+            <div class="login-form">
+                <input type="text" id="username" placeholder="Username">
+                <input type="password" id="password" placeholder="Password">
+                <button id="login-btn">Login</button>
+                <p id="login-error" style="color: red; display: none;">Invalid username or password</p>
+            </div>
+        </div>
+        <div id="home" style="display: none;">
+            <h1>E-Learning Platform</h1>
+            <button id="logout-btn" style="position: absolute; top: 20px; right: 20px;">Logout</button>
+            <ul class="course-list" id="course-list"></ul>
+        </div>
+        <div id="detail" style="display: none;">
+            <h2 id="course-title"></h2>
+            <p id="course-description"></p>
+            <div class="progress" id="course-progress"></div>
+            <h3>Lessons</h3>
+            <ul class="lesson-list" id="lesson-list"></ul>
+            <button id="complete-btn">Mark as Completed</button>
+            <button id="back-btn" style="margin-left: 10px;">Back to Home</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
